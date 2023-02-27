@@ -1,7 +1,7 @@
 def call() {
     sh """#!/bin/bash
         echo \"Creating virutal environment...."
-        python -https://github.com/sanjeevbhusal/jenkins-shared-library.git venv venv
+        python -m venv venv
 
         echo \"Activating virtual environment..."
         source venv/bin/activate

@@ -1,6 +1,5 @@
+import .com.example.Docker
+
 def call(String imageName) {
-    sh """
-        echo \"Building docker image ...\"
-        docker build -t $imageName .
-    """    
+    return new Docker(this).buildDockerImage(imageName)
 }
